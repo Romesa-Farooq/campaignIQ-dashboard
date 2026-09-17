@@ -364,6 +364,16 @@ conversions.textContent = "2,846";
 const menuButton = document.getElementById("menuButton");
 const sidebar = document.getElementById("sidebar");
 
-menuButton.addEventListener("click", function () {
+menuButton.addEventListener("click", () => {
     sidebar.classList.toggle("hidden");
+});
+
+const sidebarLinks = sidebar.querySelectorAll("a");
+
+sidebarLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+        if (window.innerWidth < 1024) {
+            sidebar.classList.add("hidden");
+        }
+    });
 });
