@@ -4,8 +4,7 @@
   "main": "index.js",
   "scripts": {
   "dev": "live-server",
-  "build": "npx @tailwindcss/cli -i ./css/input.css -o ./css/output.css --minify"
-},
+  "build": "npx @tailwindcss/cli -i ./public/css/input.css -o ./public/css/output.css --minify"},
   "keywords": [],
   "author": "",
   "license": "ISC",
